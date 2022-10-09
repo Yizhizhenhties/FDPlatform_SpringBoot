@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.fdplatform.mapper.ValidateImgGroupMapper">
+    <resultMap id="BaseResultMap" type="org.example.fdplatform.model.domain.ValidateImgGroup">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="groupuuid" property="groupuuid" jdbcType="LONGVARCHAR" />
+        <result column="imguids" property="imguids" jdbcType="LONGVARCHAR" />
+        <result column="answer" property="answer"  jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, groupuuid, imguids, answer
+    </sql>
+</mapper>

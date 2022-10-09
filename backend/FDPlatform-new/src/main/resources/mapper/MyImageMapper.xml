@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.fdplatform.mapper.MyImageMapper">
+    <resultMap id="BaseResultMap" type="org.example.fdplatform.model.domain.MyImage">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="imguid" property="imguid" jdbcType="LONGVARCHAR" />
+        <result column="base64url" property="base64url" jdbcType="LONGVARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, imguid, base64url
+    </sql>
+</mapper>
